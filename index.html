@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main>
-        
+    <main class="flex gap-5 justify-around mt-20">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="bg-zinc-500 w-[360px] p-5 text-center rounded-lg">
+                <img src="images/triangle.png" alt="" class="mx-auto">
+                <h1 class="my-3 font-bold text-2xl text-white">Triangle</h1>
+                <p class="text-white">Area (A) = 0.5 X b X h</p>
+                <div class="text-center my-5">
+                    <input id="base-field" type="number" class="w-1/3 outline-none px-2 py-1 rounded-lg" placeholder="base"> <span class="text-white font-bold">CM<sup>2</sup></span>
+                    <input id="height-field" type="number" class="w-1/3 outline-none px-2 py-1 rounded-lg" placeholder="height"> <span class="text-white font-bold">CM<sup>2</sup></span>
+                </div>
+                <button class="bg-green-600 hover:bg-green-700 btn text-white px-24 text-lg border-none">Calculate</button>
+            </div>
+            <div class="bg-zinc-500 w-[350px] p-5 text-center rounded-lg">
+                <img src="images/triangle.png" alt="" class="mx-auto">
+                <h1 class="my-3 font-bold text-2xl text-white">Rectangle</h1>
+                <p class="text-white">Area (A) = w X l</p>
+                <div class="text-center my-5">
+                    <input id="base-field" type="number" class="w-1/3 outline-none px-2 py-1 rounded-lg" placeholder="width"> <span class="text-white font-bold">CM<sup>2</sup></span>
+                    <input id="height-field" type="number" class="w-1/3 outline-none px-2 py-1 rounded-lg" placeholder="length"> <span class="text-white font-bold">CM<sup>2</sup></span>
+                </div>
+                <button class="bg-green-600 hover:bg-green-700 btn text-white px-24 text-lg border-none">Calculate</button>
+            </div>
+            <div class="bg-zinc-500 w-[350px] p-5 text-center rounded-lg">
+                <img src="images/triangle.png" alt="" class="mx-auto">
+                <h1 class="my-3 font-bold text-2xl text-white">Parallelogram</h1>
+                <p class="text-white">Area (A) = b X h</p>
+                <div class="text-center my-5">
+                    <input id="base-field" type="number" class="w-1/3 outline-none px-2 py-1 rounded-lg" placeholder="base"> <span class="text-white font-bold">CM<sup>2</sup></span>
+                    <input id="height-field" type="number" class="w-1/3 outline-none px-2 py-1 rounded-lg" placeholder="height"> <span class="text-white font-bold">CM<sup>2</sup></span>
+                </div>
+                <button class="bg-green-600 hover:bg-green-700 btn text-white px-24 text-lg border-none">Calculate</button>
+            </div>
+        </section>
+        <section>
+            <h1 class="text-3xl font-bold">Area Calculation</h1>
+        </section>
     </main>
 </body>
 </html>
