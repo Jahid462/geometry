@@ -7,6 +7,7 @@ document.getElementById('btn-triangel').addEventListener('click', function(){
         return;
     }
     setOutputText('tri-output-field', total);
+    areaCalculation('Triangle', total);
 })
 document.getElementById('btn-rectangel').addEventListener('click', function(){
     const width = getInputValue('width-field');
@@ -17,6 +18,7 @@ document.getElementById('btn-rectangel').addEventListener('click', function(){
         return;
     }
     setOutputText('rect-output-field', total);
+    areaCalculation('Rectangle', total);
 })
 document.getElementById('btn-parallelogram').addEventListener('click', function(){
     const paraBase = getInputValue('para-base-field');
@@ -27,4 +29,5 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
         return;
     }
     setOutputText('para-output-field', total);
+    areaCalculation('Parallelogram', total);
 })
